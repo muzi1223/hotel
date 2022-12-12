@@ -1,0 +1,861 @@
+<!DOCTYPE HTML>
+<html lang="en-gb" dir="ltr"  data-config='{"twitter":0,"plusone":0,"facebook":0,"style":"cadet-blue"}'><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+	<base href="https://kolahoigreen.ufpm.in/index.php/en/" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Kolahoi Green</title>
+	<link href="/index.php/en/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="/index.php/en/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="/templates/lamour/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="https://kolahoigreen.ufpm.in/media/com_solidres/assets/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://kolahoigreen.ufpm.in/media/com_solidres/assets/css/jquery/themes/base/jquery-ui.min.css" rel="stylesheet" />
+	<link href="/media/plg_solidres_feedback/assets/css/flags.css" rel="stylesheet" />
+	<link href="/media/plg_solidres_feedback/assets/css/feedbacks.css" rel="stylesheet" />
+	<link href="https://kolahoigreen.ufpm.in//media/mod_sr_camera/assets/css/camera.css" rel="stylesheet" />
+	<link href="/media/com_solidres/assets/css/main.min.css?59d1436a2a1332ad0aa5b526733c75dd" rel="stylesheet" />
+	<link href="https://kolahoigreen.ufpm.in/media/com_acym/css/module.min.css?v=741" rel="stylesheet" />
+	<link href="/modules/mod_sp_weather/assets/css/mod_sp_weather.css" rel="stylesheet" />
+	<style>	.roomtypecarousel .item {
+		text-align: center;
+	}	.roomtypecarousel .item img {
+		margin: 0 auto;
+	}	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"3f8dae44b4664631855d4f4367ed0d68","system.paths":{"root":"","base":""},"system.keepalive":{"interval":840000,"uri":"\/index.php\/en\/component\/ajax\/?format=json"}}</script>
+	<script src="/media/jui/js/jquery.min.js?38dde6aefff2e7b01e3cbeb17e20b6f4"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?38dde6aefff2e7b01e3cbeb17e20b6f4"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?38dde6aefff2e7b01e3cbeb17e20b6f4"></script>
+	<script src="/media/jui/js/jquery.ui.core.min.js?38dde6aefff2e7b01e3cbeb17e20b6f4"></script>
+	<script src="/media/com_solidres/assets/js/noconflict.js?59d1436a2a1332ad0aa5b526733c75dd"></script>
+	<script src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/js/jquery/ui/jquery-ui.min.js"></script>
+	<script src="/media/com_solidres/assets/js/site.min.js?59d1436a2a1332ad0aa5b526733c75dd"></script>
+	<script src="/media/com_solidres/assets/js/common.min.js?59d1436a2a1332ad0aa5b526733c75dd"></script>
+	<script src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/js/jquery/external/jquery_cookie.js"></script>
+	<script src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/js/validate/jquery.validate.min.js"></script>
+	<script src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/js/validate/additional-methods.min.js"></script>
+	<script src="/media/system/js/core.js?38dde6aefff2e7b01e3cbeb17e20b6f4"></script>
+	<script src="https://kolahoigreen.ufpm.in//media/mod_sr_camera/assets/js/camera/jquery.easing.1.3.js"></script>
+	<script src="https://kolahoigreen.ufpm.in//media/mod_sr_camera/assets/js/camera/camera.min.js"></script>
+	<script src="/media/jui/js/bootstrap.min.js?38dde6aefff2e7b01e3cbeb17e20b6f4"></script>
+	<script src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/js/datePicker/localization/jquery.ui.datepicker-en-GB.js"></script>
+	<script src="https://kolahoigreen.ufpm.in/media/com_acym/js/module.min.js?v=741" defer></script>
+	<!--[if lt IE 9]><script src="/media/system/js/polyfill.event.js?38dde6aefff2e7b01e3cbeb17e20b6f4"></script><![endif]-->
+	<script src="/media/system/js/keepalive.js?38dde6aefff2e7b01e3cbeb17e20b6f4"></script>
+	<script>			(function() {
+				Solidres.complextariff_base_url = "/plugins/solidres/complextariff//components/com_solidres";
+		    })();
+		
+			(function() {
+				Solidres.options.load({
+					"Hub":1,
+					"ChannelManager":0,
+					"AutoScroll": 1,
+					"AutoScrollTariff": 1,
+					"RootURI": "https://kolahoigreen.ufpm.in/",
+					"BaseURI": "https://kolahoigreen.ufpm.in/",
+					"JVersion": "3"
+				});
+			})();	
+				
+			Solidres.jQuery.validator.setDefaults({
+			    errorPlacement: function (error, element) {
+			        if (element.parents("[data-fieldset-group]").length) {
+			            error.insertAfter(element.parents("[data-fieldset-group]"));
+			        } else {
+			            error.insertAfter(element);
+			        }
+			    }
+			});	
+				
+			Solidres.jQuery(function($) {	
+				
+				// Turn radios into btn-group
+				$("#solidres form fieldset.radio").addClass("btn-group").removeClass("t3onoff");
+			    $("#solidres form .radio.btn-group label").addClass("btn btn-default");
+			    $("#solidres form .btn-group label:not(.active)").click(function() {
+			        var label = $(this);
+			        var input = $("#" + label.attr("for"));
+			
+			        if (!input.prop("checked")) {
+			            label.closest(".btn-group").find("label").removeClass("active btn-success btn-danger btn-primary");
+			            if (input.val() == "") {
+			                label.addClass("active btn-primary");
+			            } else if (input.val() == 0) {
+			                label.addClass("active btn-danger");
+			            } else {
+			                label.addClass("active btn-success");
+			            }
+			            input.prop("checked", true);
+			            input.trigger("change");
+			        }
+			    });
+			
+			    $("#solidres .btn-group input[checked=checked]").each(function()
+			    {
+			        if ($(this).val() == "") {
+			            $("label[for=" + $(this).attr("id") + "]").addClass("active btn-primary");
+			        } else if ($(this).val() == 0) {
+			            $("label[for=" + $(this).attr("id") + "]").addClass("active btn-danger");
+			        } else {
+			            $("label[for=" + $(this).attr("id") + "]").addClass("active btn-success");
+			        }
+			    });
+			});
+		
+	jQuery(document).ready(function (){
+		if (typeof jQuery.fn.chosen !== "undefined") {
+			jQuery(".solidres-module-advancedsearch select").chosen("destroy");			
+		}		
+	});	Solidres.jQuery(function($) {
+		var minLengthOfStay = 1;
+		var checkout = $("#sr-advancedsearch-form-130 .checkout_datepicker_inline_module").datepicker({
+			minDate : "+1",
+			numberOfMonths : 1,
+			showButtonPanel : true,
+			dateFormat : "dd-mm-yy",
+			firstDay: 1,
+			
+			onSelect: function() {
+				$("#sr-advancedsearch-form-130 input[name='checkout']").val($.datepicker.formatDate("yy-mm-dd", $(this).datepicker("getDate")));
+				$("#sr-advancedsearch-form-130 .checkout_module").html($.datepicker.formatDate("dd-mm-yy", $(this).datepicker("getDate")) + "<i class=\"fa fa-calendar\"></i>");
+				$("#sr-advancedsearch-form-130 .checkout_datepicker_inline_module").slideToggle();
+				$("#sr-advancedsearch-form-130 .checkin_module").removeClass("disabledCalendar");
+			}
+		});
+		var checkin = $("#sr-advancedsearch-form-130 .checkin_datepicker_inline_module").datepicker({
+			minDate : "+0d",
+			
+			numberOfMonths : 1,
+			showButtonPanel : true,
+			dateFormat : "dd-mm-yy",
+			
+			onSelect : function() {
+				var currentSelectedDate = $(this).datepicker("getDate");
+				var checkoutMinDate = $(this).datepicker("getDate", "+1d");
+				checkoutMinDate.setDate(checkoutMinDate.getDate() + minLengthOfStay);
+				checkout.datepicker( "option", "minDate", checkoutMinDate );
+				checkout.datepicker( "setDate", checkoutMinDate);
+				
+				$("#sr-advancedsearch-form-130 input[name='checkin']").val($.datepicker.formatDate("yy-mm-dd", currentSelectedDate));
+				$("#sr-advancedsearch-form-130 input[name='checkout']").val($.datepicker.formatDate("yy-mm-dd", checkoutMinDate));				$("#sr-advancedsearch-form-130 .checkin_module").html($.datepicker.formatDate("dd-mm-yy", currentSelectedDate) + "<i class=\"fa fa-calendar\"></i>");
+				$("#sr-advancedsearch-form-130 .checkout_module").html($.datepicker.formatDate("dd-mm-yy", checkoutMinDate) + "<i class=\"fa fa-calendar\"></i>");
+				$("#sr-advancedsearch-form-130 .checkin_datepicker_inline_module").slideToggle();
+				$("#sr-advancedsearch-form-130 .checkout_module").removeClass("disabledCalendar");
+			},
+			firstDay: 1
+		});
+		$(".ui-datepicker").addClass("notranslate");
+		$("#sr-advancedsearch-form-130 .checkin_module").click(function() {
+			if (!$(this).hasClass("disabledCalendar")) {
+				$("#sr-advancedsearch-form-130 .checkin_datepicker_inline_module").slideToggle("fast", function() {
+					if ($(this).is(":hidden")) {
+						$("#sr-advancedsearch-form-130 .checkout_module").removeClass("disabledCalendar");
+					} else {
+						$("#sr-advancedsearch-form-130 .checkout_module").addClass("disabledCalendar");
+					}
+				});
+			}
+		});		$("#sr-advancedsearch-form-130 .checkout_module").click(function() {
+			if (!$(this).hasClass("disabledCalendar")) {
+				$("#sr-advancedsearch-form-130 .checkout_datepicker_inline_module").slideToggle("fast", function() {
+					if ($(this).is(":hidden")) {
+						$("#sr-advancedsearch-form-130 .checkin_module").removeClass("disabledCalendar");
+					} else {
+						$("#sr-advancedsearch-form-130 .checkin_module").addClass("disabledCalendar");
+					}
+				});
+			}
+		});		$("#sr-advancedsearch-form-130 .room_quantity").change(function() {
+			var curQuantity = $(this).val();
+			$("#sr-advancedsearch-form-130 .room_num_row").each(function( index ) {
+				var index2 = index + 1;
+				if (index2 <= curQuantity) {
+					$("#sr-advancedsearch-form-130 #room_num_row_" + index2).show();
+					$("#sr-advancedsearch-form-130 #room_num_row_" + index2 + " select").removeAttr("disabled");
+				} else {
+					$("#sr-advancedsearch-form-130 #room_num_row_" + index2).hide();
+					$("#sr-advancedsearch-form-130 #room_num_row_" + index2 + " select").attr("disabled", "disabled");
+				}
+			});
+		});		if ($("#sr-advancedsearch-form-130 .room_quantity").val() > 0) {
+			$("#sr-advancedsearch-form-130 .room_quantity").trigger("change");
+		}
+    });		Solidres.jQuery(function($) {
+			$("#location130").typeahead({
+				"source": ["Gulmarg","Pahalgam"]
+			})
+		});
+				Solidres.jQuery(document).ready(function($){
+				$("#carousel21-110").carousel();
+			});
+					Solidres.jQuery(document).ready(function($){
+				$("#carousel20-110").carousel();
+			});
+					Solidres.jQuery(document).ready(function($){
+				$("#carousel30-110").carousel();
+			});
+		
+        if(typeof acymModule === 'undefined'){
+            var acymModule = [];
+			acymModule['emailRegex'] = /^[a-z0-9!#$%&\'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+\/=?^_`{|}~-]+)*\@([a-z0-9-]+\.)+[a-z0-9]{2,20}$/i;
+			acymModule['NAMECAPTION'] = 'Name';
+			acymModule['NAME_MISSING'] = 'Please enter your name';
+			acymModule['EMAILCAPTION'] = 'Email';
+			acymModule['VALID_EMAIL'] = 'Please enter a valid e-mail address';
+			acymModule['CAPTCHA_MISSING'] = 'The captcha is invalid, please try again';
+			acymModule['NO_LIST_SELECTED'] = 'Please select the lists you want to subscribe to';
+			acymModule['NO_LIST_SELECTED_UNSUB'] = 'Please select the lists you want to unsubscribe from';
+            acymModule['ACCEPT_TERMS'] = 'Please check the Terms and Conditions / Privacy policy';
+        }
+		
+	</script><link rel="apple-touch-icon-precomposed" href="/templates/lamour/apple_touch_icon.png">
+<link rel="stylesheet" href="/templates/lamour/styles/cadet-blue/css/bootstrap.css">
+<link rel="stylesheet" href="/templates/lamour/styles/cadet-blue/css/theme.css">
+<link rel="stylesheet" href="css:custom.css">
+<script src="/templates/lamour/warp/vendor/uikit/js/uikit.js"></script>
+<script src="/templates/lamour/warp/vendor/uikit/js/components/autocomplete.js"></script>
+<script src="/templates/lamour/warp/vendor/uikit/js/components/search.js"></script>
+<script src="/templates/lamour/warp/vendor/uikit/js/components/tooltip.js"></script>
+<script src="/templates/lamour/warp/js/social.js"></script>
+<script src="/templates/lamour/js/theme.js"></script>
+</head><body class="tm-isblog has-slideshow">        <div class="uk-container uk-container-center box-white">
+		<div class="tm-toolbar uk-clearfix uk-hidden-small">			
+						<div class="uk-float-right"><div class="uk-panel">
+	<div class="social_icons">
+		<a href="#" class="uk-icon-button" title="Facebook"><i class="uk-icon-facebook"></i></a>
+		<a href="#" class="uk-icon-button" title="Twitter"><i class="uk-icon-twitter"></i></a>
+		<a href="#" class="uk-icon-button" title="Google-plus"><i class="uk-icon-google-plus"></i></a>
+		<a href="#" class="uk-icon-button" title="Tripadvisor"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+	</div></div>
+<div class="uk-panel"><ul class="solidres-module-currency">
+	<li><a href="javascript:Solidres.setCurrency(1)" >INR</a></li></ul></div>
+<div class="uk-panel">    <div id="weather_sp1_id145" class="weather_sp1 platform-openweathermap">        <div class="weather_sp1_c">
+            <div class="weather_sp1_cleft">
+                                <img class="spw_icon_big" src="https://openweathermap.org/img/w/01n.png" title="Clear Sky" alt="Clear Sky" />            </div>
+            
+            <div class="weather_sp1_cright">
+                                    <span class="weather_sp1_city">
+                        Gulmarg                    </span>-
+                
+	            <span class="spw_current_temp">
+                    	                    -0.84&deg;C                                    </span>                                -<span class="spw_row">
+                    Clear Sky                </span>
+                
+                
+                            </div> <!-- /.weather_sp1_cright -->            <div style="clear:both"></div>		
+        </div> <!-- /.weather_sp1_c -->        <div style="clear:both"></div>
+        
+    <div style="clear:both"></div>
+</div></div></div>
+			
+		</div>
+    </div>
+    
+        <div class="box-color">
+        <div class="uk-container uk-container-center">
+                            <a class="tm-logo" href="https://kolahoigreen.ufpm.in">
+	<div id="logo">
+	<img src='/images/logo.png'>
+</div></a>
+            
+                            <nav class="tm-navbar uk-navbar">                                            
+		<ul class="uk-navbar-nav uk-hidden-small">
+			<li class="uk-parent" data-uk-dropdown>
+				<a href="#">Login</a>
+				<div class="uk-dropdown uk-dropdown-navbar">
+<form class="uk-form" action="/index.php/en/" method="post">	
+	<div class="uk-form-row">
+		<input class="uk-width-1-1" type="text" name="username" size="18" placeholder="Username">
+	</div>	<div class="uk-form-row">
+		<input class="uk-width-1-1" type="password" name="password" size="18" placeholder="Password">
+	</div>	
+		<div class="uk-form-row">
+				<label for="modlgn-remember-1237410727">Remember Me</label>
+		<input id="modlgn-remember-1237410727" type="checkbox" name="remember" value="yes" checked>
+	</div>
+		
+	<div class="uk-form-row">
+		<button class="uk-button uk-button-primary" value="Log in" name="Submit" type="submit">Log in</button>
+	</div>	<ul class="uk-list uk-margin-bottom-remove">
+		<li><a href="/index.php/en/component/users/?view=reset&amp;Itemid=159">Forgot your password?</a></li>
+		<li><a href="/index.php/en/component/users/?view=remind&amp;Itemid=159">Forgot your username?</a></li>
+						<li><a href="/index.php/en/component/users/?view=registration&amp;Itemid=159">Create an account</a></li>
+			</ul>
+	
+		
+	<input type="hidden" name="option" value="com_users">
+	<input type="hidden" name="task" value="user.login">
+	<input type="hidden" name="return" value="aHR0cHM6Ly9rb2xhaG9pZ3JlZW4udWZwbS5pbi9pbmRleC5waHAvZW4v">
+	<input type="hidden" name="3f8dae44b4664631855d4f4367ed0d68" value="1" /></form>
+</div>
+			</li>
+		</ul>
+<ul class="uk-navbar-nav uk-hidden-small"><li class="uk-active"><a href="/index.php/en/">Home</a></li><li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#">Hotels</a>
+<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1"><div class="uk-grid uk-dropdown-grid"><div class="uk-width-1-1"><ul class="uk-nav uk-nav-navbar"><li><a href="/index.php/en/hotels/reservations">Reservations</a></li><li><a href="/index.php/en/hotels/our-services">Our Services</a></li><li><a href="/index.php/en/hotels/special-offers">Special Offers</a></li><li><a href="/index.php/en/hotels/booking-conditions">Booking Conditions </a></li><li><a href="/index.php/en/hotels/privacy-policy">Privacy Policy</a></li></ul></div></div></div></li></ul>                    
+                                        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                    
+                    
+                                        <div class="uk-navbar-content uk-navbar-center uk-visible-small"><a class="tm-logo-small" href="https://kolahoigreen.ufpm.in">
+	<div id="logo-small">
+	<img src='/images/logo.png'>
+</div></a></div>
+                    
+                </nav>
+                    </div>
+    </div>
+    
+        <div class="uk-container uk-container-center box-white box-absolute">
+        <section id="tm-booking" class="tm-booking uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><div class="uk-width-1-1">
+	<div class="uk-panel uk-panel-box"><form id="sr-advancedsearch-form-130"
+      action="/index.php/en/hotels/reservations"
+      method="GET"
+      class="form-stacked sr-validate solidres-module-advancedsearch bs2"
+      onsubmit="this.action = ((Solidres.options.get('AutoScroll') == 1) ? this.action + (document.getElementById('hub-search-navbar') ? '#hub-search-navbar' : '#search-results') : this.action)"
+>
+	<fieldset>
+		
+		
+		<div class="row-fluid">
+			<div class="span6">
+				<div class="row-fluid">
+											<div class="span4">
+							<label for="location130">
+								Location							</label>
+														<select name="location" id="location130" class="form-control input-block-level" >
+																	<option value=""></option>
+																			<option  value="Gulmarg">Gulmarg</option>
+																				<option  value="Pahalgam">Pahalgam</option>
+																	</select>
+											</div>
+										<div class="span4">
+						<label>
+							Check-in						</label>
+						<div class="checkin_module datefield ">
+							12-12-2022							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="checkin_datepicker_inline_module datepicker_inline" style="display: none"></div>
+												<input type="hidden" name="checkin" value="2022-12-12" />
+					</div>
+					<div class="span4">
+						<label>
+							Check-out						</label>
+						<div class="checkout_module datefield ">
+							13-12-2022							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="checkout_datepicker_inline_module datepicker_inline" style="display: none"></div>
+												<input type="hidden" name="checkout" value="2022-12-13" />
+					</div>
+				</div>
+			</div>
+			
+				<div class="span4">
+					<div class="row-fluid">
+				        						<div class="span3">
+							<label>Rooms</label>
+							<select class="form-control input-block-level room_quantity" name="room_quantity">
+																	<option  value="1">1</option>
+																	<option  value="2">2</option>
+																	<option  value="3">3</option>
+																	<option  value="4">4</option>
+																	<option  value="5">5</option>
+															</select>
+						</div>
+				        						<div class="span9">
+															<div class="row-fluid">
+									<div class="span12 room_num_row" id="room_num_row_1" style="display: none">
+										<div class="row-fluid">
+																						<div class="span4 room_num_label">
+												<label>&nbsp;</label>
+												Room 1											</div>
+																																	<div class="span4">
+												<label>Adults</label>
+												<select disabled class="form-control input-block-level" name="room_opt[1][adults]">
+																											<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+											<div class="span4">
+												<label>Children</label>
+												<select disabled class="form-control input-block-level" name="room_opt[1][children]">
+																											<option  value="0">0</option>
+																												<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+																					</div>
+									</div>
+								</div>
+															<div class="row-fluid">
+									<div class="span12 room_num_row" id="room_num_row_2" style="display: none">
+										<div class="row-fluid">
+																						<div class="span4 room_num_label">
+												<label>&nbsp;</label>
+												Room 2											</div>
+																																	<div class="span4">
+												<label>Adults</label>
+												<select disabled class="form-control input-block-level" name="room_opt[2][adults]">
+																											<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+											<div class="span4">
+												<label>Children</label>
+												<select disabled class="form-control input-block-level" name="room_opt[2][children]">
+																											<option  value="0">0</option>
+																												<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+																					</div>
+									</div>
+								</div>
+															<div class="row-fluid">
+									<div class="span12 room_num_row" id="room_num_row_3" style="display: none">
+										<div class="row-fluid">
+																						<div class="span4 room_num_label">
+												<label>&nbsp;</label>
+												Room 3											</div>
+																																	<div class="span4">
+												<label>Adults</label>
+												<select disabled class="form-control input-block-level" name="room_opt[3][adults]">
+																											<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+											<div class="span4">
+												<label>Children</label>
+												<select disabled class="form-control input-block-level" name="room_opt[3][children]">
+																											<option  value="0">0</option>
+																												<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+																					</div>
+									</div>
+								</div>
+															<div class="row-fluid">
+									<div class="span12 room_num_row" id="room_num_row_4" style="display: none">
+										<div class="row-fluid">
+																						<div class="span4 room_num_label">
+												<label>&nbsp;</label>
+												Room 4											</div>
+																																	<div class="span4">
+												<label>Adults</label>
+												<select disabled class="form-control input-block-level" name="room_opt[4][adults]">
+																											<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+											<div class="span4">
+												<label>Children</label>
+												<select disabled class="form-control input-block-level" name="room_opt[4][children]">
+																											<option  value="0">0</option>
+																												<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+																					</div>
+									</div>
+								</div>
+															<div class="row-fluid">
+									<div class="span12 room_num_row" id="room_num_row_5" style="display: none">
+										<div class="row-fluid">
+																						<div class="span4 room_num_label">
+												<label>&nbsp;</label>
+												Room 5											</div>
+																																	<div class="span4">
+												<label>Adults</label>
+												<select disabled class="form-control input-block-level" name="room_opt[5][adults]">
+																											<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+											<div class="span4">
+												<label>Children</label>
+												<select disabled class="form-control input-block-level" name="room_opt[5][children]">
+																											<option  value="0">0</option>
+																												<option  value="1">1</option>
+																												<option  value="2">2</option>
+																												<option  value="3">3</option>
+																												<option  value="4">4</option>
+																												<option  value="5">5</option>
+																										</select>
+											</div>
+																					</div>
+									</div>
+								</div>
+													</div>
+					</div>
+				</div>
+			
+			<div class="span2">
+				<div class="action">
+					<button class="btn btn-default btn-block btn_large" type="submit"><i class="fa fa-search"></i> Check</button>
+				</div>
+			</div>
+		</div>
+	</fieldset>	<input type="hidden" name="option" value="com_solidres" />
+	<input type="hidden" name="task" value="hub.search" />
+		<input type="hidden" name="start" value="0" />
+	<input type="hidden" name="Itemid" value="300" />
+	<input type="hidden" name="3f8dae44b4664631855d4f4367ed0d68" value="1" /></form></div></div>
+</section>
+    </div>
+    
+    
+        <section id="tm-slide" class="tm-slide uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+<div class="uk-width-1-1"><div class="uk-panel">
+<div class="camera_wrap solidres-module-camera camera_white_skin" id="mod_camera_8">
+			<div data-thumb="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/thumbnails/DJI_08901_75x75.jpg"
+			 data-src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/DJI_08901.jpg">
+			<!--<div class="camera_caption fadeFromBottom"></div>-->
+		</div>
+			<div data-thumb="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/thumbnails/the-hotel-lobby-area_75x75.jpg"
+			 data-src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/the-hotel-lobby-area.jpg">
+			<!--<div class="camera_caption fadeFromBottom"></div>-->
+		</div>
+			<div data-thumb="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/thumbnails/Club Room_1_2_75x75.JPG"
+			 data-src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/Club Room_1_2.JPG">
+			<!--<div class="camera_caption fadeFromBottom"></div>-->
+		</div>
+	</div><script>
+	Solidres.jQuery(function($){
+		$('#mod_camera_' + 8).camera({
+			alignment: 'center',
+			autoAdvance: true,
+			mobileAutoAdvance: true,
+			barDirection: 'leftToRight',
+			barPosition: 'bottom',
+			cols: 6,
+			easing: 'easeInOutExpo',
+			fx: 'random',
+			mobileFx: 'random',
+			gridDifference: 250,
+			height: '40%',
+			hover: true,
+			loader: 'pie',
+			loaderColor: '#eeeeee',
+			loaderBgColor: '#222222',
+			loaderOpacity: .8,
+			loaderPadding: 2,
+			loaderStroke: 7,
+			minHeight: '500px',
+			navigation: true,
+			nagivationHover: true,
+			mobileNavHover: true,
+			opacityOnGrid: false,
+			overLayer: true,
+			pagination: true,
+			playPause: true,
+			pauseOnClick: true,
+			pieDiameter: 38,
+			piePosition: 'rightTop',
+			portrait: false,
+			rows: 4,
+			slicedCols: 12,
+			slicedRows: 8,
+			slideOn: 'random',
+			thumbnails: true,
+			time: 7000,
+			transPeriod: 1500		});
+	});
+</script></div></div>
+</section>
+    
+    <div class="tm-page">                <div class="uk-container uk-container-center box-white">
+            <section id="tm-top-a" class="tm-top-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><div class="uk-width-1-1">
+	<div class="uk-panel uk-panel-box"><h3 class="uk-panel-title">Explore Rooms</h3><div class="row-fluid solidres-module-roomtype">	<div class="span4 solidres-module-roomtype-item" id="roomtype21-110">
+				<div id="carousel21-110" class="carousel roomtypecarousel slide">
+			<div class="carousel-inner">
+									<div class="item active ">
+						<img src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/thumbnails/ROOM_G_300x250.jpg" alt="Club Room" />
+					</div>
+							</div>
+						
+			<h4>Club Room</h4>
+		</div>
+		
+		<div class="roomtype_desc">
+					</div>
+		
+		<div class="roomtype_mintariff">
+			<span>from</span>
+			<h5>
+				INR14,000.00			</h5>
+		</div>
+		
+		<a class="btn btn-info" href="/index.php/en/hotels/reservations?view=roomtype&amp;id=21">Read more</a>
+	</div>
+	<div class="span4 solidres-module-roomtype-item" id="roomtype20-110">
+				<div id="carousel20-110" class="carousel roomtypecarousel slide">
+			<div class="carousel-inner">
+									<div class="item active ">
+						<img src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/thumbnails/Premium Room_1_300x250.JPG" alt="Premium Room" />
+					</div>
+							</div>
+						
+			<h4>Premium Room</h4>
+		</div>
+		
+		<div class="roomtype_desc">
+					</div>
+		
+		<div class="roomtype_mintariff">
+			<span>from</span>
+			<h5>
+				INR13,000.00			</h5>
+		</div>
+		
+		<a class="btn btn-info" href="/index.php/en/hotels/reservations?view=roomtype&amp;id=20">Read more</a>
+	</div>
+	<div class="span4 solidres-module-roomtype-item" id="roomtype30-110">
+				<div id="carousel30-110" class="carousel roomtypecarousel slide">
+			<div class="carousel-inner">
+									<div class="item active ">
+						<img src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/thumbnails/Club Room_1_2_300x250.JPG" alt="Superior Club Room" />
+					</div>
+									<div class="item  ">
+						<img src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/thumbnails/Club Room_1_300x250.JPG" alt="Superior Club Room" />
+					</div>
+							</div>
+						<a class="carousel-control left" href="#carousel30-110" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#carousel30-110" data-slide="next">&rsaquo;</a>
+						
+			<h4>Superior Club Room</h4>
+		</div>
+		
+		<div class="roomtype_desc">
+					</div>
+		
+		<div class="roomtype_mintariff">
+			<span>from</span>
+			<h5>
+				INR16,000.00			</h5>
+		</div>
+		
+		<a class="btn btn-info" href="/index.php/en/hotels/reservations?view=roomtype&amp;id=30">Read more</a>
+	</div>
+</div></div></div>
+</section>
+        </div>
+        
+        
+        
+        
+        
+                <div class="uk-container uk-container-center box-white">
+            <div class="box-small">
+                <section id="tm-bottom-a" class="tm-bottom-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+<div class="uk-width-1-1"><div class="uk-panel uk-panel-box">
+	<div class="uk-grid" id="book_by_phone">
+	<div class="uk-width-large-4-5 uk-width-medium-3-4">
+		<div class="icon-box">
+			<i class="uk-icon-phone" title="Book by Phone"></i>
+		</div>
+		<h3>Gulmarg: +91 9622525810<br />Pahalgam: +91 9622525810</h3>
+		<p>Booking time: 08:00 - 20:00 hrs</p>
+	</div>
+	<div class="uk-width-large-1-5 uk-width-medium-1-4">
+		<a href="/index.php/en/hotels/reservations"><button class="btn btn_large" title="Book Online"><i class="uk-icon-desktop"></i> Book Online</button></a>
+	</div>
+</div></div></div>
+</section>
+            </div>
+        </div>
+        
+                <div class="uk-container uk-container-center box-light">
+            <section id="tm-bottom-b" class="tm-bottom-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+<div class="uk-width-1-1"><div class="uk-panel uk-panel-box"><h3 class="uk-panel-title">Best Deals</h3>
+<div class="row-fluid solidres-module-coupon">	<div class="span4 solidres-module-coupon-item">
+		<h4>Summer Holiday!</h4>		<div class="coupon_img">
+                            <a href="/index.php/en/hotels/special-offers">
+                                            <img src="https://kolahoigreen.ufpm.in/media/com_solidres/assets/images/system/img4.jpg"
+                     alt="Summer Holiday!" />
+                                <span class="mask">
+                    <p><i class="uk-icon-clock-o"></i> Expires: 24-10-2030</p>
+                </span>
+                            </a>
+            		</div>
+		
+		<div class="details_coupon">
+			<span>Save up to</span>
+			<h5>10%</h5>							<a href="/index.php/en/hotels/special-offers" class="btn">
+					Information				</a>
+					</div>
+	</div>
+</div></div></div>
+</section>
+        </div>
+        
+                <div class="uk-container uk-container-center box-white">
+            <div class="box-small">
+                <section id="tm-bottom-c" class="tm-bottom-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+<div class="uk-width-1-1 uk-width-medium-1-3"><div class="uk-panel uk-panel-box"><h3 class="uk-panel-title">Why Choose Us?</h3>
+	<div class="info">
+<p>The highest mountain in the Vale of Kashmir, Kolahoi is locally named the ‘Gashe-braer’ meaning the goddess of light for its sheer beauty and dwarfing all other surrounding peaks. It is an epitome of majesty and aptly represents us, The Kolahoi Green Hotel & Resorts. Kolahoi Green is a collection of upscale hotels and resorts. We are a full-service experience with premium accommodation and services.</p>
+	<!--<ul class="uk-list uk-list-line">
+		<li>Best price guarantee</li>
+		<li>Fast, convenient and secured payment options</li>
+		<li>Exceptional customer services</li>
+		<li>Hotel Information abundance & most accurate</li>
+		<li>Ongoing promotions, discounts and membership benefits</li>
+	</ul>-->
+</div></div></div><div class="uk-width-1-1 uk-width-medium-1-3"><div class="uk-panel uk-panel-box"><h3 class="uk-panel-title">News & Events</h3>
+<ul class="uk-list uk-list-line">
+</ul></div></div><div class="uk-width-1-1 uk-width-medium-1-3"><div class="uk-panel uk-panel-box"><h3 class="uk-panel-title">Contact Details</h3>
+	<div class="info">
+	<ul class="uk-list uk-list-line">
+		<li>Gulmarg Tel: +91 9622525810</li>
+		<li>Pahalgam Tel: +91 9622525810</li>
+		<li>Email: Reservations-pahalgam@kolahoigreen.com, Reservations-gulmarg@kolahoigreen.com</li>
+		<li>GULMARG, NEAR ICE RINK,
+BARAMULLAH-193403
+J&K<br />
+LANGANBAL,KP ROAD,
+PAHALGAM-192129
+ANANTNAG,J&K
+</li>
+			<p><a href="/index.php/en/contact-us"><button class="btn" title="Contact Form">Contact Form</button></a></p>
+	</ul>
+</div></div></div>
+</section>
+            </div>
+        </div>
+        
+                <div class="uk-container uk-container-center box-color">
+            <div class="box-small">
+                <section id="tm-bottom-d" class="tm-bottom-d uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+<div class="uk-width-1-1"><div class="uk-panel uk-panel-box"><h3 class="uk-panel-title">Sign Up Newsletter</h3><script type="text/javascript">
+        <!--
+        window.addEventListener("DOMContentLoaded", (event) => {
+acymModule["excludeValuesformAcym96641"] = [];
+acymModule["excludeValuesformAcym96641"]["2"] = 'Email';  });
+        //-->
+        </script>	<div class="acym_module " id="acym_module_formAcym96641">
+		<div class="acym_fulldiv" id="acym_fulldiv_formAcym96641" >
+			<form enctype="multipart/form-data"
+				  id="formAcym96641"
+				  name="formAcym96641"
+				  method="POST"
+				  action="/index.php/en/component/acym/frontusers?tmpl=component"
+				  onsubmit="return submitAcymForm('subscribe','formAcym96641', 'acymSubmitSubForm')">
+				<div class="acym_module_form">
+                    <div class="acym_introtext">Enter your email address to receive news and offers from us</div>
+<table class="acym_form">
+	<tr>
+        <td class="acyfield_2 acyfield_text"><input  name="user[email]" placeholder="Email" value="" required type="email" class="cell acym__user__edit__email" ></td>
+		<td  class="acysubbuttons">
+			<noscript>
+				<div class="onefield fieldacycaptcha">
+                    Please enable the javascript to submit this form				</div>
+			</noscript>
+			<input type="button"
+				   class="btn btn-primary button subbutton"
+				   value="SUBSCRIBE"
+				   name="Submit"
+				   onclick="try{ return submitAcymForm('subscribe','formAcym96641', 'acymSubmitSubForm'); }catch(err){alert('The form could not be submitted '+err);return false;}" />
+            		</td>
+	</tr>
+</table>
+				</div>				<input type="hidden" name="ctrl" value="frontusers" />
+				<input type="hidden" name="task" value="notask" />
+				<input type="hidden" name="option" value="com_acym" />                
+				<input type="hidden" name="ajax" value="1" />
+				<input type="hidden" name="successmode" value="replace" />
+				<input type="hidden" name="acy_source" value="Module n°146" />
+				<input type="hidden" name="hiddenlists" value="1,2" />
+				<input type="hidden" name="fields" value="name,email" />
+				<input type="hidden" name="acyformname" value="formAcym96641" />
+				<input type="hidden" name="acysubmode" value="mod_acym" />
+				<input type="hidden" name="confirmation_message" value="" />                			</form>
+		</div>
+	</div>
+</div></div>
+</section>
+            </div>
+        </div>
+        
+    </div>        <a class="tm-totop-scroller" data-uk-smooth-scroll href="#"></a>
+    
+        <div class="uk-container uk-container-center">
+		<footer id="tm-footer" class="tm-footer">			<div class="uk-panel">
+	<div class="row-fluid solidres-module-footer">        
+	<div class="span4 copyright">
+		<p>UFPM © 2022.<br/> All Rights Reserved.</p>
+	</div>
+	<div class="span4 footer-logo">
+		<img src='/images/logo.png'>
+	</div>
+	<div class="span4 social_icons">
+		<a href="#" class="uk-icon-button" title="Facebook"><i class="uk-icon-facebook"></i></a>
+		<a href="#" class="uk-icon-button" title="Twitter"><i class="uk-icon-twitter"></i></a>
+		<a href="#" class="uk-icon-button" title="Google-plus"><i class="uk-icon-google-plus"></i></a>
+		<a href="#" class="uk-icon-button" title="Pinterest"><i class="uk-icon-pinterest"></i></a>
+	</div>
+</div></div>
+<div class="uk-panel"><ul class="uk-subnav uk-subnav-line uk-flex-center"><li><a href="/index.php/en/about-us">About Us</a></li><li><a href="/index.php/en/contact-us">Contact Us</a></li><li><a href="/index.php/en/booking-conditions">Booking Conditions </a></li><li><a href="/index.php/en/privacy-policy">Privacy Policy</a></li></ul></div>
+		</footer>
+	</div>
+    
+	
+		<div id="offcanvas" class="uk-offcanvas">
+		<div class="uk-offcanvas-bar"><ul class="uk-nav uk-nav-offcanvas"><li class="uk-active"><a href="/index.php/en/">Home</a></li><li class="uk-parent"><a href="#">Hotels</a>
+<ul class="uk-nav-sub"><li><a href="/index.php/en/hotels/reservations">Reservations</a></li><li><a href="/index.php/en/hotels/our-services">Our Services</a></li><li><a href="/index.php/en/hotels/special-offers">Special Offers</a></li><li><a href="/index.php/en/hotels/booking-conditions">Booking Conditions </a></li><li><a href="/index.php/en/hotels/privacy-policy">Privacy Policy</a></li></ul></li></ul>
+<div class="uk-panel"><h3 class="uk-panel-title">Login</h3>
+<form class="uk-form" action="/index.php/en/" method="post">	
+	<div class="uk-form-row">
+		<input class="uk-width-1-1" type="text" name="username" size="18" placeholder="Username">
+	</div>	<div class="uk-form-row">
+		<input class="uk-width-1-1" type="password" name="password" size="18" placeholder="Password">
+	</div>	
+		<div class="uk-form-row">
+				<label for="modlgn-remember-1082191295">Remember Me</label>
+		<input id="modlgn-remember-1082191295" type="checkbox" name="remember" value="yes" checked>
+	</div>
+		
+	<div class="uk-form-row">
+		<button class="uk-button uk-button-primary" value="Log in" name="Submit" type="submit">Log in</button>
+	</div>	<ul class="uk-list uk-margin-bottom-remove">
+		<li><a href="/index.php/en/component/users/?view=reset&amp;Itemid=159">Forgot your password?</a></li>
+		<li><a href="/index.php/en/component/users/?view=remind&amp;Itemid=159">Forgot your username?</a></li>
+						<li><a href="/index.php/en/component/users/?view=registration&amp;Itemid=159">Create an account</a></li>
+			</ul>
+	
+		
+	<input type="hidden" name="option" value="com_users">
+	<input type="hidden" name="task" value="user.login">
+	<input type="hidden" name="return" value="aHR0cHM6Ly9rb2xhaG9pZ3JlZW4udWZwbS5pbi9pbmRleC5waHAvZW4v">
+	<input type="hidden" name="3f8dae44b4664631855d4f4367ed0d68" value="1" /></form>
+</div></div>
+	</div>
+	
+</body>
+</html>
